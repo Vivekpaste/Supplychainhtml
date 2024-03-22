@@ -193,23 +193,18 @@ html{
 
 }
 
+#header.header
+{
+    height:80px;
+}
+
 .textbox
 {
 
-    height:80px;
+    height:100px;
     width:60%;
     background-color:#ffffff;
     border-radius:20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.alert
-{
-    height:240px;
-    width:30%;
-    background-color:#ffffff;
-    border-radius:20px;
-    padding-right: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -217,10 +212,20 @@ html{
 {
     display: flex;
     align-items: baseline;
-    margin-top:0%;
+    margin-top:-40px;
     gap:40px;
     border-radius:20px;
 
+}
+
+.alert
+{
+    height:240px;
+    width:30%;
+    background-color:#ffffff;
+    border-radius:23px !important;
+    padding-top: 20px ;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
 .texts
@@ -233,7 +238,7 @@ html{
 {
     display:flex;
     gap:37px;
-    margin-top:-10%;
+    margin-top:-7.5%;
 
 }
 
@@ -251,14 +256,14 @@ html{
 .graph_cal
 {
    display: flex;
-    margin-top:50px;
+    margin-top:2.5%;
     gap:40px;
     border-radius:20px;
     padding-bottom: 90px;
 }
 .graph
 {
-    height:180px;
+    height:230px;
     width:60%;
     background-color: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -267,10 +272,42 @@ html{
 
 .calender
 {
-    height:260px;
+    
+    height:284px;
     width:30%;
     background-color: #ffffff;
-    margin-top: -80px;
+    margin-top: -55px;
     border-radius:20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+#calendar
+{
+    padding:55px;
+}
+
+#calendar.calender h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+  
+  .day {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .current-day {
+    background-color: lightblue;
+    font-weight: bold;
+    border-radius:30px;
+    position: absolute;
+    
+  }
+
+tbody, td, tfoot, th, thead, tr
+{
+    color:#000000
 }

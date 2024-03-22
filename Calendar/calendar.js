@@ -1,12 +1,21 @@
-// Get the current date
-const currentDate = new Date();
-
 // Function to generate the calendar
 function generateCalendar(year, month) {
   const calendarElement = document.getElementById('calendar');
   const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+  // Validate input
+  if (isNaN(year) || isNaN(month) || month < 0 || month > 11) {
+    console.error('Invalid year or month.');
+    return;
+  }
+
   // Set the current date
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.getMonth();
+  const currentDay = currentDate.getDate();
+
+  // Set the specified date
   const date = new Date(year, month);
 
   // Clear the previous content
@@ -49,7 +58,8 @@ function generateCalendar(year, month) {
 
   // Create cells for the calendar
   let dateIndex = 1;
-  for (let i = 0; i < 6; i++) { // 6 rows for maximum weeks in a month
+  const numRows = Math.ceil((numDays + firstDayIndex) / 7);
+  for (let i = 0; i < numRows; i++) {
     const row = document.createElement('tr');
     for (let j = 0; j < 7; j++) {
       const cell = document.createElement('td');
@@ -62,6 +72,10 @@ function generateCalendar(year, month) {
       } else {
         // Cell with the date
         cell.textContent = dateIndex;
+        // Highlight the current date
+        if (currentYear === year && currentMonth === month && dateIndex === currentDay) {
+          cell.classList.add('current-day');
+        }
         dateIndex++;
       }
       row.appendChild(cell);
@@ -71,4 +85,5 @@ function generateCalendar(year, month) {
 }
 
 // Call the function to generate the calendar for the current month
+const currentDate = new Date();
 generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
