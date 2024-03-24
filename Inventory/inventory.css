@@ -318,3 +318,26 @@ tr:hover {
     vertical-align: baseline;
     white-space: nowrap;
   }
+
+/* (A) BACKGROUND */
+#boxBack {
+    /* (A1) FULLSCREEN + CENTERED */
+    position: fixed; z-index: 999;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    align-items: center; justify-content: center;
+   
+    /* (A2) TRANSPARENT BACKGROUND + HIDDEN */
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+   
+  /* (A3) ADD THIS CSS CLASS TO SHOW */
+  #boxBack.show { display: flex; }
+   
+  /* (B) DIALOG BOX */
+  #boxWrap {
+    min-width: 320px; max-width: 600px;
+    padding: 10px;
+    background: #fff;
+  }

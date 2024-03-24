@@ -100,3 +100,10 @@ fetch('Inventory/gfgdetails.json')
     // Append the table to the HTML document
     document.getElementById('yourElementId').appendChild(table);
   }
+
+  function dbox (msg) {
+    if (msg != undefined) {
+      document.getElementById("boxTxt").innerHTML = msg;
+      document.getElementById("boxBack").classList.add("show");
+    } else { document.getElementById("boxBack").classList.remove("show"); }
+  }
