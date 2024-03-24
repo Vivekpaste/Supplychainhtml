@@ -202,10 +202,13 @@ html{
 {
 
     height:100px;
-    width:60%;
+    width:65%;
     background-color:#ffffff;
     border-radius:20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    line-height: 100px;
+    text-align:left;
+    padding-left:30px;
 }
 
 .text-alert
@@ -220,51 +223,68 @@ html{
 
 .alert
 {
-    height:240px;
+    height:260px;
     width:30%;
     background-color:#ffffff;
     border-radius:23px !important;
-    padding-top: 20px ;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    left:0px !important;
+    top:-20px !important;
+    padding-right:35px !important;
 }
 
-.texts
-{
-    display: grid;
-    place-items: center;
-}
+
 
 .analysis
 {
     display:flex;
     gap:37px;
-    margin-top:-7.5%;
+    margin-top:-11.9%;
 
 }
 
 .monthly
 {
-    height:180px;
-    width:18%;
+    height:210px;
+    width:19.9%;
     background-color: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius:20px;
     display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
 }
 
+.monthly p{
+    text-align: center;
+    margin-top:70px;
+    color:rgba(0, 0, 0, 0.51);
+
+}
+
+.monthly h1
+{
+    position: absolute;
+    margin-top:-10px;
+    font-size: 30px;
+
+}
 
 .graph_cal
 {
    display: flex;
-    margin-top:2.5%;
+    margin-top:2.1%;
     gap:40px;
     border-radius:20px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
+
 .graph
 {
     height:230px;
-    width:60%;
+    width:65%;
     background-color: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius:20px;
@@ -273,41 +293,55 @@ html{
 .calender
 {
     
-    height:284px;
+    height:304px;
     width:30%;
     background-color: #ffffff;
-    margin-top: -55px;
+    margin-top: -75px;
     border-radius:20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     overflow: hidden; 
-}
-#calendar
-{
-    padding:55px;
+
 }
 
-#calendar.calender h2 {
+#calendar
+{
+    padding:30px;
+}
+
+#calendar.calender h2 
+{
     text-align: center;
     font-size: 23px;
-  }
+    background-color: #ffffff;
+    color:#000000
+}
   
-  .day {
+.day 
+{
     border: 1px solid #ccc;
     padding: 10px;
-  }
+}
   
-  .current-day {
+.current-day 
+{
     background-color: lightblue;
     font-weight: bold;
     border-radius:30px;
     position: absolute;
     
-  }
+}
 
 tbody, td, tfoot, th, thead, tr
 {
-    color:#000000
+    color:#000000;
+}
+
+#greeting-message
+{
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
 }
