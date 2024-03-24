@@ -134,17 +134,57 @@
             <h4 style="text-align: center;">Inventory Analysis</h4>
                 <div id="boxBack"><div id="boxWrap">
                     <div id="boxTxt"></div>  
-            <button class="button-9" style="margin-top: 40px;text-align: center;" >Product Details</button><br>
+            <button class="button-9" id="openFormBtn" style="margin-top: 40px;text-align: center;" >Product Details</button><br>
             </div></div>
-            <button class="button-9">Order fulfillment</button><br>
-            <button class="button-9">Dynamic Pricing Strategy</button><br>
-            <button class="button-9">Risk Manager</button><br>
-            <button class="button-9">Product Patterns</button><br>
-            <button class="button-9">Market trends</button><br>
+            <button class="button-9" id="openFormBtn">Order fulfillment</button><br>
+            <button class="button-9" id="openFormBtn">Dynamic Pricing Strategy</button><br>
+            <button class="button-9" id="openFormBtn">Risk Manager</button><br>
+            <button class="button-9" id="openFormBtn">Product Patterns</button><br>
+            <button class="button-9" id="openFormBtn">Market trends</button><br>
         </div>
       </div>
         <!--Container Main end-->
-
+<div>
+    <button id="openFormBtn">Open Form</button>
+    <div id="popupForm" class="popup">
+        <h2>Enter product details</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="id">Id:</label><br>
+            <input type="number" id="id" name="id"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    
+    <script>
+        // Get the button and the form elements
+        var openFormBtn = document.getElementById("openFormBtn");
+        var popupForm = document.getElementById("popupForm");
+        var overlay = document.getElementById("overlay");
+    
+        // Function to open the form pop-up
+        function openFormPopup() {
+            popupForm.style.display = "block";
+            overlay.style.display = "block";
+        }
+    
+        // Function to close the form pop-up
+        function closeFormPopup() {
+            popupForm.style.display = "none";
+            overlay.style.display = "none";
+        }
+    
+        // Event listener for the button click
+        openFormBtn.addEventListener("click", openFormPopup);
+    
+        // Event listener for closing the form pop-up when clicking outside the form
+        overlay.addEventListener("click", closeFormPopup);
+    </script>
+</div>
        
     </body>
 </html>
