@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var greeting = "";
 
     if (hour >= 5 && hour < 12) {
-        greeting = "Good morning! ";
+        greeting = "Good morning kuki! May you have a good day?";
     } else if (hour >= 12 && hour < 18) {
-        greeting = "Good afternoon!";
+        greeting = "Good afternoon kuki! ";
     } else {
-        greeting = "Good evening! How was your day kuki?";
+        greeting = "Good evening kuki! How was your day?";
     }
 
     // Display the greeting message
