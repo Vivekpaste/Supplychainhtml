@@ -194,7 +194,7 @@ html{
 
 .filterbox{
     display: inline-flex;
-    
+    margin-top:1px;
 }
 .filterbox-2{
     margin-left: 200px;
@@ -263,7 +263,7 @@ html{
 
 .alert
 {
-    height:440px;
+    height:640px;
     width:30%;
     background-color:#ffffff;
     border-radius:30px;
@@ -292,7 +292,7 @@ table {
     border-collapse: collapse;
     border: 1px solid #6e48c0;
     box-shadow: #9e9999;
-    margin-top: 20px;
+    margin-top: 2px;
 }
 th, td {
     padding: 20px;

@@ -220,109 +220,24 @@ html{
     gap:40px;
 
 }
-.graph_cal
+.predict-graph
 {
-   display: flex;
     margin-top:95px;
     gap:40px;
     border-radius:20px;
     padding-bottom: 60px;
 }
 
-.graph
+.predictor
 {
-    height:230px;
-    width:65%;
+    height:410px;
+    width:55%;
     background-color: #ffffff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius:20px;
 }
 
-.calender
-{
-    
-    height:304px;
-    width:30%;
-    background-color: #ffffff;
-    border-radius:20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    overflow: hidden; 
 
-}
-
-#calendar
-{
-    padding:30px;
-}
-
-#calendar.calender h2 
-{
-    text-align: center;
-    font-size: 23px;
-    background-color: #ffffff;
-    color:#000000
-}
-  
-.day 
-{
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-  
-.current-day 
-{
-    background-color: lightblue;
-    font-weight: bold;
-    border-radius:30px;
-    position: absolute;
-    
-}
-
-  .button-9:hover,
-  .button-9:focus{
-    background-color: #b3d3ea;
-    color: #2c5777;
-  }
-  
-.button-9:focus {
-    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-  }
-  
-.button-9:active {
-    background-color: #a0c7e4;
-    box-shadow: none;
-    color: #2c5777;
-  }
-  
-  .button-9 {
-      background-color: #e1ecf4;
-      border-radius: 3px;
-      border: 1px solid #7aa7c7;
-      box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-      box-sizing: border-box;
-      color: #39739d;
-      cursor: pointer;
-      display: flex;
-      font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 1.15385;
-      margin: 0;
-      outline: none;
-      padding: 8px .8em;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      vertical-align: baseline;
-      white-space: nowrap;
-    }
-  
     .popup {
       display: none;
       position: fixed;
@@ -347,3 +262,121 @@ html{
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 9998;
   }
+
+  /* ---------------------------------------------------------------------------------------------- */
+
+  /* *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+  } */
+  
+  form {
+    max-width: 500px;
+    margin-left: 5px auto;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+  
+ 
+  input{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+ }
+  
+.submit{
+    margin-top: 50px;
+margin-left: 200px;
+font-family: 'Ubuntu', sans-serif;
+    transform: translate(-50%, -50%);
+    
+    width: 110px;
+    height: 40px;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid #8C82FC;
+    background: #fff;
+    color: #8C82FC;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.submit:hover{
+    background-color: #6e2cfc;
+}
+
+button{
+    font-family: 'Ubuntu', sans-serif;
+    transform: translate(-50%, -50%);
+    
+    width: 170px;
+    height: 40px;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid #8C82FC;
+    background: #fff;
+    color: #8C82FC;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+  }
+  
+  button:hover{
+    background: #8C82FC;
+    color: #fff;
+  }
+  
+  button span{
+    opacity: 1;
+    visibility: visible;
+    transition: all .35s;
+  }
+  
+  .success{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s;
+  }
+  
+  .success svg{
+    width: 20px;
+    height: 20px;
+    fill: yellowgreen;
+    transform-origin: 50% 50%;
+    transform: translateY(-50%) rotate(0deg) scale(0);
+    transition: all .35s;
+  }
+ /* ---------------------------------------------------------------------------------------------------------- */
+
+  

@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
    
+    let btn = document.querySelector("button");
+
+    btn.addEventListener("click", active);
+    
+    function active() {
+      btn.classList.toggle("is_active");
+    }
+
+
     const showNavbar = (toggleId, navId, bodyId, headerId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId),
