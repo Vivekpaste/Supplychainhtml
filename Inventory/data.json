@@ -1,0 +1,11 @@
+[
+{"Inventory Id": 2, "Store": "Jane Smith", "Brand": 25,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 3, "Store": "Bob Johnson", "Brand": 35,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 4, "Store": "Bob Johnson", "Brand": 35,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 1, "Store": "John Doe", "Brand": 30, "Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 2, "Store": "Jane Smith", "Brand": 25,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 3, "Store": "Bob Johnson", "Brand": 35,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 4, "Store": "Bob Johnson", "Brand": 35,"Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30},
+{"Inventory Id": 1, "Store": "John Doe", "Brand": 30, "Description": 30, "On Hand": 30,"Predicted weekly":20 ,"Lead time":2,"Safety Stock":36  , "Status": 30}
+
+]
