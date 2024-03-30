@@ -328,5 +328,37 @@ font-family: 'Ubuntu', sans-serif;
 
   
  /* ---------------------------------------------------------------------------------------------------------- */
+.popup-container{
+    position: relative;
+}
 
+
+.popup-message {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the popup message below the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.hover-text:hover + .popup-message {
+    display: block;
+}
+
+.cardstyle {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
   
+
+  .list{
+    text-align: center;
+  }

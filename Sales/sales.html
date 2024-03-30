@@ -107,9 +107,42 @@
       <div class="carousel-container">
         <figure class="icon-cards mt-3">
             <div class="icon-cards__content">
-              <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">TOP 10 SALES</span></div>
-              <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">TOTAL PROFITS MADE</span></div>
-              <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">SLOW MOVING PRODUCTS</span></div>
+              <div class="icon-cards__item  align-items-center justify-content-center">
+                <span class="cardstyle" ><h2><b>TOP 10 SALES</b></h2></span><br>
+                <div class="list">
+                    <ul id="List1" style="margin-top: 20px;"></ul>
+                    <script>
+                        let data = ["Product1", "Product2", "Product3", "Product4"];
+                        let list = document.getElementById("List1");
+                        for (i = 0; i < data.length; ++i) {
+                            var li = document.createElement('li');
+                            li.innerText = data[i];
+                            list.appendChild(li);
+                        }
+                    </script>
+
+                </div>
+                
+              </div>
+
+              <div class="icon-cards__item  align-items-center justify-content-center">
+                <span class="cardstyle"><h2><b>TOTAL PROFITS MADE</b></h2></span><br><br>
+                <h1 class="cardstyle">12.5K</h1>
+              </div>
+
+              <div class="icon-cards__item  align-items-center justify-content-center">
+                <span class="cardstyle"  ><h2><b>SLOW MOVING PRODUCTS</b></h2></span>
+                <ul id="List2" style="margin-top: 20px;"></ul>
+                    <script>
+                        let slow_moving_products = ["Product1", "Product2", "Product3", "Product4"];
+                        let slow_moving_products_list = document.getElementById("List2");
+                        for (i = 0; i < slow_moving_products.length; ++i) {
+                            var li = document.createElement('li');
+                            li.innerText = slow_moving_products[i];
+                            slow_moving_products_list.appendChild(li);
+                        }
+                    </script>
+              </div>
             </div>
           </figure>
     </div>
