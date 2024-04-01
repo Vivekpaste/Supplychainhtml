@@ -26,7 +26,6 @@
        
         <script src="inventory.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="inventory-json.js"></script>
         <!-- Bootstrap Bundle (Bootstrap JS + Popper.js) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
         
@@ -39,13 +38,9 @@
             <h2 style="color:#6E48C0; font-weight: 600; margin-left: 0px;">Inventory</h2></div>
             <h6 style="margin-left:17%">In-house Insights</h6>
             </div>
-            
-            </div>
-           
-            <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
         </header>
 
-             <!-- sidebar start -->
+        <!-- sidebar start -->
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
                 <div> <a href="#" class="nav_logo"> <i class='bx bx-layer nav_logo-icon'></i> <span class="nav_logo-name">Supply Chain</span> </a>
@@ -62,17 +57,23 @@
 
 
         <!--Container Main start-->
+        
         <div class="text-alert">
-
-        <div  class="inv-table" style="margin-top:120px"  >
-            <div>
-                Sort by: <button class="button-8" role="button">Store</button> <button class="button-8" role="button">Sales</button> <button class="button-8" role="button">Status</button>
+        <div  class="inv-table"   >
+            <div class="sort">
+                <div><label id="store-name">Enter Store Name:</label>
                 <input type="search" id="searchInput" placeholder="Search...">
             </div>
-           
-            
-            <div id="tableContainer" ></div>
-            
+                <div class="dropdown">
+                    <span id="columns">Choose Columns &#9660;</span>
+                    <div class="dropdown-content" id="dropdownContent">
+                        <!-- Checkboxes will be dynamically added here -->
+                    </div>
+                </div>
+                
+            </div><br>
+            <div id="tableContainer">
+            </div>
          </div>
          <div class="graph">
 
