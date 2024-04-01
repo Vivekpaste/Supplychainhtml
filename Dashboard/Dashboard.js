@@ -35,4 +35,49 @@ document.addEventListener("DOMContentLoaded", function(event) {
     linkColor.forEach(l=> l.addEventListener('click', colorLink))
     
      // Your code to run since DOM is loaded and ready
+
+
+    // Sample JSON data
+    var jsonData = [
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        { "column1": "Data 1-1",  },
+        { "column1": "Data 2-1" },
+        // Add more data if needed
+    ];
+
+    // Function to populate the table with JSON data
+    function populateTable(data) {
+        var tbody = document.querySelector('#dataTable tbody');
+        tbody.innerHTML = '';
+
+        data.forEach(function(item) {
+            var row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${item.column1}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // Call the function to populate the table with JSON data
+    populateTable(jsonData);
+
+
+
+
     });
