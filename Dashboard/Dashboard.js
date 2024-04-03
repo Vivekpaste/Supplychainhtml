@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         data.forEach(function(item) {
             var row = document.createElement('tr');
             row.innerHTML = `
-                <td>${item.column1}</td>
+                <td class="alert-table"><span>${item.column1}<span></td>
             `;
             tbody.appendChild(row);
         });

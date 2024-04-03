@@ -214,7 +214,7 @@ html{
 .text-alert
 {
     display: flex;
-    align-items: baseline;
+    /* align-items: baseline; */
     margin-top:-40px;
     gap:40px;
     border-radius:20px;
@@ -223,6 +223,7 @@ html{
 
 table{
     align-items: center;
+    margin-top: 60px;
 }
 
 .alert
@@ -239,7 +240,14 @@ table{
     text-align: center;
 }
 
-
+.alert-table{
+    background-color: #dedcdcea;
+    color: #000000;
+    margin-bottom: 10px;
+    border-bottom: #000000 1px solid;
+    width:300px;
+    margin-left: 20px;
+}
 
 .analysis
 {
@@ -339,6 +347,8 @@ table{
     position: absolute;
     
 }
+
+
 
 tbody, td, tfoot, th, thead, tr
 {
