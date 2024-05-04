@@ -148,13 +148,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         data.forEach(function(item) {
             var row = document.createElement('tr');
-            
+            var line=document.createElement('hr');
             row.innerHTML = `
-                <td>${item.onhand}</td>
+                <td style="padding-top:2.5px;">${item.onhand}</td>
+            `;
+            line.innerHTML=` <hr style="border-top: 1px solid #000000;">
             `;
             
             row.addEventListener('mouseover', function() {
-                row.style.backgroundColor = 'lightblue'; // Change to whatever highlight color you prefer
+                row.style.backgroundColor = 'lightred'; // Change to whatever highlight color you prefer
             });
             
             row.addEventListener('mouseout', function() {
@@ -162,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             });
             
             tbody.appendChild(row);
+            tbody.appendChild(line);
         });
     }
 
