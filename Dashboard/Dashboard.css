@@ -247,6 +247,14 @@ table{
     width:300px;
     margin-left: 20px;
 }
+.dataTable{
+    margin-top: 1px;
+}
+.alert-item{
+background-color: rgb(244, 157, 157);
+}
+
+
 
 .analysis
 {
@@ -360,6 +368,8 @@ table{
 tbody, td, tfoot, th, thead, tr
 {
     color:#000000;
+    margin-left: 25px;
+    padding-right: 30px;
 }
 
 #greeting-message
