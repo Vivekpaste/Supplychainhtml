@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "date": "2024-06-10",
+        "title": "Meeting with Bob",
+        "description": "Discuss project updates"
+    },
+    {
+        "id": 2,
+        "date": "2024-06-15",
+        "title": "Dentist Appointment",
+        "description": "Routine check-up"
+    }
+]
